@@ -1,28 +1,40 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang cá nhân của tôi</title>
+  <title>Dashboard | NCC</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f3f3f3;
-      text-align: center;
-      padding: 50px;
+    :root {
+      --dark: #0E3746;
+      --cream: #EAE8DC;
+      --light: #F4F2EC;
+      --red: #BE2623;
     }
-    h1 {
-      color: #333;
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+    body { display: flex; height: 100vh; background: var(--cream); }
+    aside {
+      width: 220px;
+      background: var(--dark);
+      color: white;
+      padding: 20px;
     }
-    p {
-      font-size: 18px;
-      color: #666;
+    aside h2 {
+      margin-bottom: 20px;
+      font-size: 20px;
     }
-  </style>
-</head>
-<body>
-  <h1>Chào mừng đến với trang web của tôi!</h1>
-  <p>Buôn cún bán cún</p>
-</body>
-</html>
+    aside a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+    aside a:hover {
+      background: rgba(255,255,255,0.1);
+    }
+    main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
