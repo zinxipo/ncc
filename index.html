@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard | NCC</title>
-  <style>
-    :root {
-      --dark: #0E3746;
-      --cream: #EAE8DC;
-      --light: #F4F2EC;
-      --red: #BE2623;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard | NCC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <nav class="sidebar" id="sidebar">
+    <h2>🔒 Admin</h2>
+    <a href="#">🏠 Bảng điều khiển</a>
+    <a href="#">👥 Quản lý User</a>
+    <a href="#">📜 Quản lý Script</a>
+    <a href="#">📊 Thống kê</a>
+    <a href="#">⚙️ Cài đặt</a>
+  </nav>
+
+  <!-- Main content -->
+  <div class="content">
+    <div class="topbar">
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <strong>Trang quản trị</strong>
+    </div>
+
+    <div class="card">
+      <h3>Thống kê nhanh</h3>
+      <p>Chào mừng bạn đến với hệ thống quản lý. Đây là bản mẫu responsive.</p>
+    </div>
+
+    <div class="card">
+      <h3>Thao tác</h3>
+      <p>Bạn có thể quản lý người dùng, script, hoặc cấu hình hệ thống tại đây.</p>
+      <button class="btn btn-danger">Xóa dữ liệu</button>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active');
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
-    body { display: flex; height: 100vh; background: var(--cream); }
-    aside {
-      width: 220px;
-      background: var(--dark);
-      color: white;
-      padding: 20px;
-    }
-    aside h2 {
-      margin-bottom: 20px;
-      font-size: 20px;
-    }
-    aside a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      margin: 10px 0;
-      padding: 8px 12px;
-      border-radius: 6px;
-    }
-    aside a:hover {
-      background: rgba(255,255,255,0.1);
-    }
-    main {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
+  </script>
+
+</body>
+</html>
