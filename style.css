@@ -1,1 +1,105 @@
+:root {
+  --dark: #0E3746;
+  --cream: #EAE8DC;
+  --light: #F4F2EC;
+  --red: #BE2623;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: var(--cream);
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-danger {
+  background: var(--red);
+  color: white;
+}
+
+.sidebar {
+  width: 220px;
+  background: var(--dark);
+  color: white;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  transition: left 0.3s ease;
+}
+
+.sidebar a {
+  display: block;
+  margin: 12px 0;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.topbar {
+  background: var(--light);
+  padding: 14px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.content {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+/* Responsive menu ẩn */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: absolute;
+    left: -220px;
+    top: 0;
+    height: 100vh;
+    z-index: 10;
+  }
+  .sidebar.active {
+    left: 0;
+  }
+  .content {
+    margin-left: 0;
+  }
+  .menu-toggle {
+    display: inline-block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    margin-right: 12px;
+    cursor: pointer;
+  }
+}
