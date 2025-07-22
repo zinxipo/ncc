@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trang người dùng | NCC</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trang Người Dùng | NCC</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header class="topbar">
-    <h2>✨ Trang Người Dùng</h2>
-  </header>
+  <!-- Header đơn giản -->
+  <div class="topbar" style="display: flex; justify-content: space-between;">
+    <strong>🧑‍💻 Xin chào User</strong>
+    <a href="login.html" class="btn btn-danger">Đăng xuất</a>
+  </div>
 
-  <main class="content">
+  <!-- Nội dung -->
+  <div class="content" style="margin-left: 0;">
     <div class="card">
-      <h3>Chào mừng bạn!</h3>
-      <p>Đây là giao diện dành cho người dùng với thiết kế nhẹ, tối giản.</p>
-    </div>
-
-    <div class="card">
-      <h3>Script của bạn</h3>
-      <ul>
-        <li>📝 Script 1 - trạng thái: Đang chạy</li>
-        <li>📝 Script 2 - trạng thái: Dừng</li>
-        <li>📝 Script 3 - trạng thái: Lỗi</li>
+      <h2>Script của bạn</h2>
+      <ul style="margin-top: 10px; line-height: 1.8;">
+        <li>Script 1 – <a href="#">Chạy</a></li>
+        <li>Script 2 – <a href="#">Xem chi tiết</a></li>
+        <li>Script 3 – <a href="#">Chạy</a></li>
       </ul>
     </div>
 
     <div class="card">
-      <button class="btn btn-danger">Đăng xuất</button>
+      <h2>Thông tin cá nhân</h2>
+      <p>Tên: Nguyễn Văn A</p>
+      <p>Email: user@example.com</p>
     </div>
-  </main>
+  </div>
 
 </body>
 </html>
