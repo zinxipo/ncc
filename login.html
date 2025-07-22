@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Đăng nhập | NCC</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .login-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: var(--light);
+    }
+    .login-box {
+      background: white;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 360px;
+    }
+    .login-box h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .login-box input {
+      width: 100%;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .login-box .btn {
+      width: 100%;
+    }
+    .note {
+      text-align: center;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
 
+  <div class="login-wrapper">
+    <form class="login-box">
+      <h2>Đăng nhập</h2>
+      <input type="text" placeholder="Tên đăng nhập" required />
+      <input type="password" placeholder="Mật khẩu" required />
+      <button type="submit" class="btn btn-danger">Đăng nhập</button>
+      <div class="note">
+        <a href="#">Quên mật khẩu?</a>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
